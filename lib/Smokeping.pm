@@ -4118,6 +4118,7 @@ sub load_cfg ($;$) {
                 timeout => $cfg->{'InfluxDB'}{'timeout'}
             );
             if (defined $cfg->{'InfluxDB'}{'username'} && defined $cfg->{'InfluxDB'}{'password'}) {
+                do_log("DBG: Setting credentials for InfluxDB connection");
                 my $ua = $influx->get_lwp_useragent();
                 $ua->credentials(
                     $cfg->{'InfluxDB'}{'host'} . ':' . $cfg->{'InfluxDB'}{'port'},

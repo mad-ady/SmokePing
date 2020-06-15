@@ -3149,7 +3149,7 @@ DOC
 Database name (where to write the data) within InfluxDB.
 If it doesn't exist, it will be created when writing data.
 DOC
-         }
+         },
          username  =>
          {
           _re => '\S+',
@@ -3157,7 +3157,7 @@ DOC
 Username for authentication to InfluxDB.
 If not supplied, no authentication is attempted.
 DOC
-         }
+         },
          password  =>
          {
            _re => '\S+',
